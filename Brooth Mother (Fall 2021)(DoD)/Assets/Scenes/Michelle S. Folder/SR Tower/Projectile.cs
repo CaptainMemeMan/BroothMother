@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private static void Create(){
-        Instantiate(Circle)
-    }
+   // private static void Create(){
+     //   Instantiate(Circle)
+    //}
     // Start is called before the first frame update
     void Start()
     {
