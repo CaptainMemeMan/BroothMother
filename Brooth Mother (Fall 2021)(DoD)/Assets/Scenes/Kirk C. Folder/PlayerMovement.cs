@@ -10,15 +10,23 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb; //access rigidbody in order to make the player move
     
    private Vector2 movement; //stores x and y 
+    private float timeStamp = 1f;
+    public float cooldownperiod = 1f; 
 
     private bool Dashing; 
     public void Update()
     {
        movement.x = Input.GetAxisRaw("Horizontal"); //gives us the x value 
        movement.y = Input.GetAxisRaw("Vertical");  // gives us the y value
-        if (Input.GetKeyDown(KeyCode.Space)) //allows the player to dash 
+        
+        if (timeStamp <= Time.time) //attach a cooldown timer for the dash 
         {
-            Dashing = true; 
+            
+            if (Input.GetKeyDown(KeyCode.LeftShift)) //allows the player to dash 
+            {
+                Dashing = true;
+                timeStamp = Time.time + cooldownperiod;
+            }
         }
         
     }
@@ -34,5 +42,7 @@ public class PlayerMovement : MonoBehaviour
             Dashing = false;
         } 
     }
+
+   
    
 }
