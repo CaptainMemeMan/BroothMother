@@ -37,22 +37,30 @@ public class FollowEnemyInRange : MonoBehaviour
         GameObject closest = null;
 
 
+       // 
         foreach (GameObject obj in objects) {
             Transform otherTransform = obj.transform;
             float distance = Vector3.Distance(obj.transform.position, transform.position);
 
-            if (distance < minimumRange)
+
+              Debug.Log("Followable tag distance " + objects.Length + " - " + distance);
+            if (distance < minimumRange) {
+                   Debug.Log("Outside of minimum range " + objects.Length + " - " + distance);
                 continue;
+            }
 
 
             if (distance < detectDistance) {
+                   Debug.Log("Choose objkect " + objects.Length + " - " + distance);
+
                 closest = obj;
                 detectDistance = distance;
             }
         }
 
         if (closest != null) {
-           // followObject(closest);
+            Debug.Log("Follow objkect " + objects.Length + " - ");
+           followObject(closest);
         }
         
         
@@ -62,7 +70,7 @@ public class FollowEnemyInRange : MonoBehaviour
 
         Vector3 direction = (obj.transform.position - transform.position).normalized;
         float angle = Mathf.Atan2(direction.y, direction.x);
-        transform.localRotation = Quaternion.Euler(0.0f, 0.0f, angle);
+        transform.localRotation = Quaternion.Euler(0.0f, 0.0f, Mathf.Rad2Deg * angle);
 
     }
 
