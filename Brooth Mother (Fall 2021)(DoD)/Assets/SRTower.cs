@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class SRTower : MonoBehaviour
 {
-   // private static void Create(){
-     //   Instantiate(Circle)
-    //}
     // Start is called before the first frame update
     void Start()
     {
