@@ -78,12 +78,12 @@ public class BulletSpawner : MonoBehaviour
         for(int i = 0; i < numOfBullets; i++)
         {
             spawnedBullets[i] = Instantiate(bulletResource, transform);
-        //    BulletManager.bullets.Add(spawnedBullets[i]);   
+            //BulletManager.bullets.Add(spawnedBullets[i]);   
             var b = spawnedBullets[i].GetComponent<Bullet>();
             b.rotation = rotations[i];
             b.speed = bulletSpeed;
             b.velocity = bulletVelocity;
-        }
+      }
         return spawnedBullets;
     }
 
