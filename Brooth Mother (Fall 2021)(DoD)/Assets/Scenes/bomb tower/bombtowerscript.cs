@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class bombtowerscript : MonoBehaviour
 {
+    public bool exploding = false;
     public bool menuactive = false;
     public GameObject menu;
     public float animationseconds = 2000f;
@@ -22,6 +23,8 @@ public class bombtowerscript : MonoBehaviour
     {
         if (collision.collider.tag == "enemy") // we can add multiple versions if we need to
         {
+            exploding = true;
+
            CircleCollider2D CollisionDetector = this.GetComponent(typeof(CircleCollider2D)) as CircleCollider2D;
             CollisionDetector.radius = explosionRadius;
 
@@ -35,7 +38,7 @@ public class bombtowerscript : MonoBehaviour
 
         }
 
-        if (collision.collider.tag == "Player") // for deleting the tower
+        if (collision.collider.tag == "Player" && !exploding) // for deleting the tower
         {
 
             togglemenu();
