@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Base path: '/Users/msro/Documents/Unity/2020.3.22f1/Unity.app/Contents', plugins path '/Users/msro/Documents/Unity/2020.3.22f1/Unity.app/Contents/PlaybackEngines'
 Cmd: initializeCompiler
 
@@ -16,3 +17,8 @@ Cmd: compileSnippet
 Unhandled exception: Protocol error - failed to read magic number (error -2147483644, transferred 0/4)
 
 Quitting shader compiler process
+=======
+Base path: 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+>>>>>>> parent of e287cf0 (bomb tower added)

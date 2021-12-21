@@ -11,6 +11,7 @@ EditorUserSettings:
     RecentlyUsedScenePath-1:
       value: 22424703114646680e0b0227036c761e181e0b6d3f68153328271873aad00471acf238e0f323
       flags: 0
+<<<<<<< HEAD
     RecentlyUsedScenePath-2:
 <<<<<<< Updated upstream
       value: 22424703114646680e0b0227036c7419041c58096268003f212d1821adcb3d2ae9c478a9d4393a323c4cfa320d2a18
@@ -39,6 +40,8 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c6b1f01120a1e29292b032e2c1336f1af2736ebe333a9f4393a323a07a1290a371526
 >>>>>>> Stashed changes
       flags: 0
+=======
+>>>>>>> parent of e287cf0 (bomb tower added)
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
