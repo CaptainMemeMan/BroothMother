@@ -33,10 +33,10 @@ public class AStar : MonoBehaviour
 
     private Dictionary<Vector3Int, Node> allNodes = new Dictionary<Vector3Int, Node>();
 
-    private void Awake()
+    /*private void Awake()
     {
         Algorithm();
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -103,7 +103,7 @@ public class AStar : MonoBehaviour
         openList.Add(current);
     }
 
-    private void Algorithm()
+    public void Algorithm()
     {
         if(current == null)
         {
@@ -263,4 +263,5 @@ public class AStar : MonoBehaviour
     {
         return path;
     }
+
 }
