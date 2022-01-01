@@ -13,7 +13,13 @@ public class PlayerMovement : MonoBehaviour
     private float timeStamp = 1f;
     public float cooldownperiod = 1f; 
 
-    private bool Dashing; 
+    private bool Dashing;
+
+
+    public float addAmount;
+
+    
+
     public void Update()
     {
        movement.x = Input.GetAxisRaw("Horizontal"); //gives us the x value 
@@ -43,6 +49,14 @@ public class PlayerMovement : MonoBehaviour
         } 
     }
 
-   
-   
+    void OnTriggerEnter2D(Collider2D obj)
+    {
+        
+        if (obj.gameObject.tag == "Money")
+        {
+            Currency.gold += addAmount;
+            Destroy(obj.gameObject);
+        }
+    }
+
 }

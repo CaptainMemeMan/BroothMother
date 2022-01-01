@@ -5,21 +5,22 @@ using UnityEngine.UI;
 
 public class Currency : MonoBehaviour
 {
-    //public static float gold;
-    //GameObject currencyUI;
+    public static float gold;
+    GameObject currencyUI;
 
-    //void Start()
-    //{
-    //    currencyUI = GameObject.Find("Currency"); 
+    void Start()
+    {
+        currencyUI = GameObject.Find("Currency");
 
-    //}
-    //void Update() {
-    //    currencyUI.GetComponent<Text>().text = gold.ToString(); 
+    }
+    void Update()
+    {
+        currencyUI.GetComponent<Text>().text = gold.ToString();
 
-    //    if (gold < 0)
-    //    {
-    //        gold = 0;
-    //    }
-    //} 
+        if (gold < 0)
+        {
+            gold = 0;
+        }
+    }
 
 }
