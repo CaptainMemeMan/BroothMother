@@ -14,23 +14,21 @@ public class EnemyPath : MonoBehaviour
 
     private Vector3 destination;
 
+    private void Awake()
+    {
+        path = AStar.GetFinalPath();
+
+        enemy.position = path.Pop();
+        destination = enemy.position;
+        //Debug.Log(path.Pop());
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            path = AStar.GetFinalPath();
-
-            enemy.position = path.Pop();
-            destination = enemy.position;
-            //Debug.Log(path.Pop());
-
-        }
-
         if (path != null)
         {
             MoveEnemy(path);
         }
-
     }
 
     private void MoveEnemy(Stack<Vector3Int> path)

@@ -33,6 +33,11 @@ public class AStar : MonoBehaviour
 
     private Dictionary<Vector3Int, Node> allNodes = new Dictionary<Vector3Int, Node>();
 
+    private void Awake()
+    {
+        Algorithm();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -80,10 +85,6 @@ public class AStar : MonoBehaviour
             tileType = TileType.GOAL;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Algorithm();
-        }
     }
 
     private void Initialize()
