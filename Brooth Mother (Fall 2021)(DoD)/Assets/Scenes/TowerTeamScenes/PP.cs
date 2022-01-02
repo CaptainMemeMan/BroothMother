@@ -4,7 +4,7 @@ using UnityEngine; //callout PP
 
 public class PP : MonoBehaviour
 {   private float startTime;
-    float points; //Variable for the monies
+    public float points = 10; //Variable for the monies
     float t;
     float sec;
     private float timeStamp = 1f;
@@ -25,7 +25,7 @@ public class PP : MonoBehaviour
 
         if (timeStamp <= Time.time) //attach a cooldown timer for the dash 
         {
-            Currency.gold = Currency.gold + 10;
+            Currency.gold = Currency.gold + points;
             //t = 0;
             //points = 0;
             timeStamp = Time.time + cooldownperiod;
