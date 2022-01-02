@@ -11,7 +11,7 @@ public class PP : MonoBehaviour
     public float cooldownperiod = 10f;
     // Start is called before the first frame update
     void Start()
-    {   points = 0;
+    {   //points = 0;
         t=0;
         //startTime = Time.deltaTime; Callout Time; (Not nessesary)
     }
