@@ -6,7 +6,7 @@ public class bombtowerscript : MonoBehaviour
 {
     public bool exploding = false;
     public bool menuactive = false;
-    public GameObject menu;
+   // public GameObject menu;
     public float animationseconds = 2000f;
     public float explosionDamage = 2;
     public float explosionRadius = 5;
@@ -49,11 +49,11 @@ public class bombtowerscript : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
 
         Debug.Log("Collision with bomb " + collision.gameObject.name);
-        if (collision.gameObject.tag == "enemy") // we can add multiple versions if we need to
+        if (collision.gameObject.tag == "enemy" && !exploding) // we can add multiple versions if we need to
         {
             Debug.Log("Collision with enemy is bomb " + collision.gameObject.name);
             exploding = true;
@@ -61,21 +61,21 @@ public class bombtowerscript : MonoBehaviour
             //CircleCollider2D CollisionDetector = this.GetComponent<CircleCollider2D>();
             //CollisionDetector.radius = explosionRadius;
 
-            GameObject enemy = collision.collider.gameObject;
+            //GameObject enemy = collision.collider.gameObject;
 
            // fakeenemymovement damage = enemy.GetComponent<fakeenemymovement>(); // needs to be changed to access the right script
 
             //damage.damage(explosionDamage);
 
-             StartCoroutine(deathSequence());// play animation during this
+            StartCoroutine(deathSequence());// play animation during this
 
         }
 
-        if (collision.collider.tag == "Player" && !exploding) // for deleting the tower
-        {
+      //  if (collision.collider.tag == "Player" && !exploding) // for deleting the tower
+      //  {
 
            // togglemenu();
-        }
+        //}
     }
 
    /* public void togglemenu()
