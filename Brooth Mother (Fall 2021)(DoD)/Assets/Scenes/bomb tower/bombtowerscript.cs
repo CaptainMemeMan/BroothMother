@@ -8,7 +8,7 @@ public class bombtowerscript : MonoBehaviour
     public bool menuactive = false;
    // public GameObject menu;
     public float animationseconds = 2000f;
-    public float explosionDamage = 2;
+    public int explosionDamage = 10;
     public float explosionRadius = 5;
     private CircleCollider2D CollisionDetector;
     public string targetTag = "enemy";
@@ -58,12 +58,13 @@ public class bombtowerscript : MonoBehaviour
             Debug.Log("Collision with enemy is bomb " + collision.gameObject.name);
             exploding = true;
 
+    
             //CircleCollider2D CollisionDetector = this.GetComponent<CircleCollider2D>();
             //CollisionDetector.radius = explosionRadius;
 
             //GameObject enemy = collision.collider.gameObject;
 
-           // fakeenemymovement damage = enemy.GetComponent<fakeenemymovement>(); // needs to be changed to access the right script
+            // fakeenemymovement damage = enemy.GetComponent<fakeenemymovement>(); // needs to be changed to access the right script
 
             //damage.damage(explosionDamage);
 
@@ -76,6 +77,22 @@ public class bombtowerscript : MonoBehaviour
 
            // togglemenu();
         //}
+    }
+
+
+    private void damageNearby() {
+        GameObject[] objects = GameObject.FindGameObjectsWithTag(targetTag);
+
+        foreach (GameObject enemy in objects)
+        {
+
+            Collider2D collider = enemy.GetComponent<Collider2D>();
+            bool touching = CollisionDetector.IsTouching(collider);
+            if (touching)
+            {
+                enemy.GetComponent<EnemyPath>().updatehealth(explosionDamage);
+            }
+        }
     }
 
    /* public void togglemenu()
@@ -99,7 +116,7 @@ public class bombtowerscript : MonoBehaviour
     IEnumerator deathSequence()
     {
         yield return new WaitForSeconds(.25f);
-    
+        damageNearby();
         Destroy(this.gameObject);
     }
 
