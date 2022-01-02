@@ -15,7 +15,7 @@ public class spawning : MonoBehaviour
         if (timer <= 1)
         {
             Instantiate(enemy, transform.position, Quaternion.identity);
-            timer = wait;
+            timer = 5.0f;
         }
         else {
             timer -= Time.deltaTime;
