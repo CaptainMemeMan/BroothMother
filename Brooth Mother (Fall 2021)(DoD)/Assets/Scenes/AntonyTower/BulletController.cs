@@ -9,6 +9,7 @@ public class BulletController : MonoBehaviour
     public float Force;
     public Vector3 Direction;
     Vector3 Velocity;
+    public int damage = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -28,4 +29,18 @@ public class BulletController : MonoBehaviour
         }
         
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+
+
+        if (collision.gameObject.tag == "enemy")
+        {
+            Destroy(gameObject);
+            collision.GetComponent<EnemyPath>().updatehealth(damage);
+           
+        }
+    }
+
+
 }

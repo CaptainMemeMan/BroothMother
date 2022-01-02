@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
             Currency.gold += addAmount;
             Destroy(obj.gameObject);
         }
+
     }
 
 }
