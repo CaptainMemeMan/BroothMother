@@ -16,4 +16,14 @@ public class fakeenemymovement : MonoBehaviour
     {
         
     }
+
+
+    public void damage(float damagePoints) {
+        health -= damagePoints;
+
+        if (health <= 0f) {
+            Destroy(gameObject);
+        }
+        
+    }
 }

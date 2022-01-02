@@ -10,29 +10,62 @@ public class bombtowerscript : MonoBehaviour
     public float animationseconds = 2000f;
     public float explosionDamage = 2;
     public float explosionRadius = 5;
+    private CircleCollider2D CollisionDetector;
+    public string targetTag = "enemy";
+
+    public void Start()
+    {
+        CollisionDetector = this.GetComponent<CircleCollider2D>();
+        //CollisionDetector.radius = explosionRadius;
+    }
 
     public void deleteBombTower()
     {
-        toggletime(false);
+        //toggletime(false);
 
         Destroy(this.gameObject);
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void Update__() {
+
+
+        GameObject[] objects =  GameObject.FindGameObjectsWithTag(targetTag);
+
+        foreach (GameObject enemy in objects) { 
+        
+            BoxCollider2D collider  = enemy.GetComponent<BoxCollider2D>();
+            bool touching = CollisionDetector.IsTouching(collider);
+            if (touching) {
+
+                //GameObject enemy = collision.collider.gameObject;
+
+                fakeenemymovement damage = enemy.GetComponent<fakeenemymovement>(); // needs to be changed to access the right script
+
+                damage.damage(explosionDamage);
+
+                StartCoroutine(deathSequence());// play animation during this
+            }
+        }
+    }
+
+    public void OnTriggerEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "enemy") // we can add multiple versions if we need to
+
+        Debug.Log("Collision with bomb " + collision.gameObject.name);
+        if (collision.gameObject.tag == "enemy") // we can add multiple versions if we need to
         {
+            Debug.Log("Collision with enemy is bomb " + collision.gameObject.name);
             exploding = true;
 
-           CircleCollider2D CollisionDetector = this.GetComponent(typeof(CircleCollider2D)) as CircleCollider2D;
-            CollisionDetector.radius = explosionRadius;
+            //CircleCollider2D CollisionDetector = this.GetComponent<CircleCollider2D>();
+            //CollisionDetector.radius = explosionRadius;
 
             GameObject enemy = collision.collider.gameObject;
 
-            fakeenemymovement damage = enemy.GetComponent<fakeenemymovement>(); // needs to be changed to access the right script
+           // fakeenemymovement damage = enemy.GetComponent<fakeenemymovement>(); // needs to be changed to access the right script
 
-            damage.health = damage.health - explosionDamage;
+            //damage.damage(explosionDamage);
 
              StartCoroutine(deathSequence());// play animation during this
 
@@ -41,11 +74,11 @@ public class bombtowerscript : MonoBehaviour
         if (collision.collider.tag == "Player" && !exploding) // for deleting the tower
         {
 
-            togglemenu();
+           // togglemenu();
         }
     }
 
-    public void togglemenu()
+   /* public void togglemenu()
     {
         menuactive =!menuactive;
         menu.SetActive(menuactive);
@@ -60,7 +93,7 @@ public class bombtowerscript : MonoBehaviour
         Time.timeScale = 0.0f;
         if(!onoroff)
         Time.timeScale = 1f;
-    }
+    }*/
 
 
     IEnumerator deathSequence()
