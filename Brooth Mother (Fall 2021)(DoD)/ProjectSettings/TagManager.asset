@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TowerTarget
   - Money
+  - enemy
   layers:
   - Default
   - TransparentFX

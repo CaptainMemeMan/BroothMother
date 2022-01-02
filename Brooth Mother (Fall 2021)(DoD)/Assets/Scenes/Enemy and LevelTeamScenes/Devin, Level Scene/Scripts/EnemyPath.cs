@@ -6,6 +6,7 @@ public class EnemyPath : MonoBehaviour
 {
     [SerializeField]
     private Transform enemy;
+    public int health = 5;
 
     private Stack<Vector3Int> path = null;
 
@@ -56,4 +57,19 @@ public class EnemyPath : MonoBehaviour
         //Debug.Log("Moving towards");
         //Debug.Log(path.Count);
     }
+
+
+    public void updatehealth(int hea) {
+
+
+        health -= hea;
+        if (health <= 0) {
+            Destroy(gameObject);
+        }
+  
+    
+    
+    
+    }
+
 }

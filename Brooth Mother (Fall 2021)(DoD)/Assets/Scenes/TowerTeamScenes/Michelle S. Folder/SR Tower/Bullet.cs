@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     public Vector2 velocity;
     public float speed;
     public float rotation;
+    public int damage = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,4 +20,18 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(velocity * speed * Time.deltaTime);
     }
+
+
+     void OnTriggerEnter2D(Collider2D collision)
+    {
+
+
+        if (collision.gameObject.tag == "enemy")
+        {
+            Destroy(gameObject);
+            collision.GetComponent<EnemyPath>().updatehealth(damage);
+        
+        }
+    }
+
 }
