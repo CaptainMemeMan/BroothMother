@@ -7,6 +7,8 @@ public class PP : MonoBehaviour
     float points; //Variable for the monies
     float t;
     float sec;
+    private float timeStamp = 1f;
+    public float cooldownperiod = 10f;
     // Start is called before the first frame update
     void Start()
     {   points = 0;
@@ -18,13 +20,27 @@ public class PP : MonoBehaviour
     void Update()
     {
         t += Time.deltaTime; // - startTime;
-                //displaySeconds= seconds % 60;
-        //sec = (t % 60);
-        
-        if (t % 5 <= 0.003)  {     //Percent sign means we are getting the remainder
-        points = points + 10; 
+                             //displaySeconds= seconds % 60;
+                             //sec = (t % 60);
+
+        if (timeStamp <= Time.time) //attach a cooldown timer for the dash 
+        {
+            Currency.gold = Currency.gold + 10;
+            //t = 0;
+            //points = 0;
+            timeStamp = Time.time + cooldownperiod;
+            Debug.Log("Added" + Currency.gold);
+
         }
-    Debug.Log("Points " + points);
-    //Debug.Log("t " + (t % 10));
+
+        //if (t % 5 <= 0.003)  {     //Percent sign means we are getting the remainder
+        //    Currency.gold = points + 10;
+        //    t = 0;
+        //    points = 0; 
+        //}
+   // Debug.Log("Points " + Currency.gold);
+   
     }
+
+    
 }   
