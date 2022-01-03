@@ -39,14 +39,19 @@ public class PlayerMovement : MonoBehaviour
                 timeStamp = Time.time + cooldownperiod;
             }
         }
-        //if (Input.GetKey("space")) {
-        //    cir.SetActive(true);
-        
-        //}
-        if (Input.GetKey("space")) {
+
+
+        if (Input.GetKey("space"))
+        {
             towerplacement();
         }
 
+        /*
+        if (Input.GetKeyDown("space")) {
+            towercarry(tow);
+        
+        }
+        */
 
     }
 
