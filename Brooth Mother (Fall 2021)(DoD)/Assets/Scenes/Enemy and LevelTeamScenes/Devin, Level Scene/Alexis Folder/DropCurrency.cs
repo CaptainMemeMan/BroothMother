@@ -53,7 +53,8 @@ public class DropCurrency : MonoBehaviour
 
     protected virtual void InstantiateCredit()
     {
-        var credit = Instantiate(creditPrefab.gameObject, transform.position, Quaternion.identity);
+        var position = Random.insideUnitSphere;
+        var credit = Instantiate(creditPrefab.gameObject, position, Quaternion.identity);
 
         credit.GetComponent<Credit>().SetCreditValue(creditVal);
     }
