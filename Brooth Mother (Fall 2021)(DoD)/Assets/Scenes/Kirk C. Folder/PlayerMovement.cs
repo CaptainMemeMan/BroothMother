@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5f; //the float 
+  GameObject cir;
+  public  GameObject tow;
 
     public Rigidbody2D rb; //access rigidbody in order to make the player move
     
@@ -18,7 +20,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float addAmount;
 
-    
+    private void Start()
+    {
+        cir = transform.Find("Circle").gameObject;
+    }
 
     public void Update()
     {
@@ -34,13 +39,22 @@ public class PlayerMovement : MonoBehaviour
                 timeStamp = Time.time + cooldownperiod;
             }
         }
+        //if (Input.GetKey("space")) {
+        //    cir.SetActive(true);
         
+        //}
+        if (Input.GetKey("space")) {
+            towerplacement();
+        }
+
+
     }
 
     public void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * movementSpeed * Time.deltaTime); //move the player a new postion 
-        
+       // cir.GetComponent<rotate>().changpos(Mathf.Atan2(movement.y, movement.x));
+
         if (Dashing)
         {
             float dashAmount = 1f;
@@ -59,5 +73,26 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+
+    void towercarry(GameObject tower) {
+        tow = tower;
+        cir.GetComponent<SpriteRenderer>().sprite = tow.GetComponent<SpriteRenderer>().sprite;
+        cir.SetActive(true);
+      
+
+    }
+
+
+
+    void towerplacement() {
+        if (!cir.GetComponent<rotate>().place && cir.activeSelf) {
+            Instantiate(tow, cir.transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+            cir.SetActive(false);
+        }
+
+    }
+
+
+
 
 }

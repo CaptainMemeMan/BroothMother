@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1568057332}
   - component: {fileID: 1568057331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,8 @@ GameObject:
   - component: {fileID: 5877139770530805710}
   - component: {fileID: 5877139770530805711}
   - component: {fileID: 5877139770530805709}
-  m_Layer: 0
+  - component: {fileID: -1754522518383860009}
+  m_Layer: 7
   m_Name: SRTow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,3 +148,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d97e378471da040c99a8a62a862bd74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &-1754522518383860009
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877139770530805704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32
