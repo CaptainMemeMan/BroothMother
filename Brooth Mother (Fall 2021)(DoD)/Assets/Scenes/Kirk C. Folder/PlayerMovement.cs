@@ -6,18 +6,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5f; //the float 
-  GameObject cir;
-  public  GameObject tow;
-
+    GameObject cir;
+    public  GameObject tow;
     public Rigidbody2D rb; //access rigidbody in order to make the player move
     
-   private Vector2 movement; //stores x and y 
+    private Vector2 movement; //stores x and y 
     private float timeStamp = 1f;
     public float cooldownperiod = 1f; 
-
     private bool Dashing;
 
-
+   
     public float addAmount;
 
     private void Start()
@@ -52,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         
         }
         */
-
+       
     }
 
     public void FixedUpdate()
@@ -82,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
     void towercarry(GameObject tower) {
         tow = tower;
         cir.GetComponent<SpriteRenderer>().sprite = tow.GetComponent<SpriteRenderer>().sprite;
+
         cir.SetActive(true);
       
 
@@ -91,7 +90,11 @@ public class PlayerMovement : MonoBehaviour
 
     void towerplacement() {
         if (!cir.GetComponent<rotate>().place && cir.activeSelf) {
-            Instantiate(tow, cir.transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+
+
+
+            Instantiate(tow, cir.transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));                                               
+
             cir.SetActive(false);
         }
 

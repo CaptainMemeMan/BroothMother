@@ -281,6 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 47020846306754793}
   place: 0
+  cam: {fileID: 2608731108875738656, guid: 260fed1d4a9aaf543bffe0a0ef9bd933, type: 3}
 --- !u!255 &987924197
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -296,7 +297,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.0032600865, y: 0.32605863}
+  m_ConnectedAnchor: {x: 0.0032605832, y: 0.32605866}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!58 &1175268370717198672
