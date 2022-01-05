@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7118891867100245089}
   - component: {fileID: 7118891867100245090}
   - component: {fileID: 7118891867100245091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Whole bomb tower 1
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exploding: 0
   menuactive: 0
-  menu: {fileID: 0}
   animationseconds: 2000
   explosionDamage: 2
   explosionRadius: 5
