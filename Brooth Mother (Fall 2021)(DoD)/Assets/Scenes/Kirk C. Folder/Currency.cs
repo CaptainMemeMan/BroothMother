@@ -23,4 +23,12 @@ public class Currency : MonoBehaviour
         }
     }
 
+    public float returngold() {
+
+
+        return gold;
+    
+    }
+
+
 }
