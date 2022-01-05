@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void towercarry(GameObject tower) {
+    public void towercarry(GameObject tower) {
         tow = tower;
         cir.GetComponent<SpriteRenderer>().sprite = tow.GetComponent<SpriteRenderer>().sprite;
 
