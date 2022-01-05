@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class DropCurrency : MonoBehaviour
 {
-    public int energy = 100;
-
-    public int currentEnergy = 0;
-
     public int credits = 1;
 
     private Vector3 enemyPos; 
 
     private bool dropOnce = false;
+
+    public EnemyPath currHealth;
 
 
     [Header("Credit")]
@@ -21,31 +19,31 @@ public class DropCurrency : MonoBehaviour
 
     [SerializeField] protected int creditVal;
 
+
     void Start()
     {
-        currentEnergy = energy;
-        creditVal = 1;
+        currHealth = GetComponent<EnemyPath>();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            DamageRobot(50);
+            currHealth.updatehealth(1);
+            DropCredit();
         }
     }
 
 
 
-    public void DamageRobot(int damage)
+    public void DropCredit()
     {
-        currentEnergy -= damage;
 
-        if (currentEnergy <= 0 && dropOnce == false)
+        if (currHealth.health <= 0 && dropOnce == false)
         {
             InstantiateCredit();
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
             dropOnce = true;
         }

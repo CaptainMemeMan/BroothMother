@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3857894691642141748}
   m_Layer: 0
   m_Name: Credit
-  m_TagString: Untagged
+  m_TagString: Money
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: -2413806693520163455, guid: 0c4c8b6cd15ff4c69ac6c6b0c72d2973, type: 3}
   m_Color: {r: 0.97719765, g: 0.9811321, b: 0, a: 1}
   m_FlipX: 0
