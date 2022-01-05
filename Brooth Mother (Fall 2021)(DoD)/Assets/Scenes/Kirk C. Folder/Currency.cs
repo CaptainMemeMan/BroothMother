@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Currency : MonoBehaviour
 {
-    public static float gold;
+    public static float gold = 100;
     GameObject currencyUI;
 
     void Start()
