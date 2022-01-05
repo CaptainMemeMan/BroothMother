@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHearts = 5;
     public float startimmunityCooldown;
 
-    private bool immuned;
+    public bool immuned;
     private float immunityCooldown;
    [SerializeField] Health hs;
 
@@ -57,13 +57,13 @@ public class PlayerHealth : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Bullet")) && !immuned)
+        if (collision.gameObject.CompareTag("Bullet") && !immuned)
         {
             DamagePlayer(1);
             immuned = true;
         }
     }
-
+    
     void ImmunityCooldown()
     {
         immunityCooldown -= Time.deltaTime;

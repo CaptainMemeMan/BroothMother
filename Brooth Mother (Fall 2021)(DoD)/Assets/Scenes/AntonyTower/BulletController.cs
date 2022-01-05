@@ -38,12 +38,23 @@ public class BulletController : MonoBehaviour
         {
             Destroy(gameObject);
             collision.GetComponent<EnemyPath>().updatehealth(damage);
-           
+
         }
+        //else if (collision.gameObject.tag == "Player")
+        //{
+        //    collision.GetComponent<PlayerHealth>().DamagePlayer(1);
+        //    Destroy(gameObject);
+        //    player.immuned = true; 
+        //}
     }
 
-
-
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
 

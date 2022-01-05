@@ -296,7 +296,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.0032605832, y: 0.32605866}
+  m_ConnectedAnchor: {x: 0.0032600865, y: 0.32605863}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!58 &1175268370717198672
@@ -635,7 +635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hearts: 5
   maxHearts: 5
-  startimmunityCooldown: 0
+  startimmunityCooldown: 3
+  immuned: 0
   hs: {fileID: 1019920337}
 --- !u!61 &722704921
 BoxCollider2D:

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7352984688261521102}
   m_Layer: 0
   m_Name: TestBullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   BulletLifeTime: 3
   Force: 6
   Direction: {x: 0, y: 0, z: 0}
+  damage: 2
 --- !u!58 &7352984688261521102
 CircleCollider2D:
   m_ObjectHideFlags: 0
