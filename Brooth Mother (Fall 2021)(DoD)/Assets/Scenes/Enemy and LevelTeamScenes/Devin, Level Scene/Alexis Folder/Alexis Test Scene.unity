@@ -280,3 +280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00195ddeb87ea044b8d95d62897e5529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  energy: 100
+  currentEnergy: 0
+  credits: 1
+  creditPrefab: {fileID: 3857894691642141748, guid: e083466df7b6cb748a944e356a522339, type: 3}
+  creditVal: 0

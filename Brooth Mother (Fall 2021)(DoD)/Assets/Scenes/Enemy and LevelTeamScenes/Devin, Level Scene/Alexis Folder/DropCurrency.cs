@@ -10,6 +10,8 @@ public class DropCurrency : MonoBehaviour
 
     public int credits = 1;
 
+    private Vector3 enemyPos; 
+
     private bool dropOnce = false;
 
 
@@ -29,7 +31,7 @@ public class DropCurrency : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            DamageRobot(10);
+            DamageRobot(50);
         }
     }
 
@@ -53,8 +55,17 @@ public class DropCurrency : MonoBehaviour
 
     protected virtual void InstantiateCredit()
     {
-        var position = Random.insideUnitSphere;
-        var credit = Instantiate(creditPrefab.gameObject, position, Quaternion.identity);
+        enemyPos = gameObject.transform.position;
+
+        var rndX = Random.Range(0, 3);
+
+        var rndY = Random.Range(0, 3);
+
+        enemyPos.x += rndX;
+
+        enemyPos.y += rndY;
+
+        var credit = Instantiate(creditPrefab.gameObject, enemyPos, Quaternion.identity);
 
         credit.GetComponent<Credit>().SetCreditValue(creditVal);
     }
