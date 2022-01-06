@@ -6,7 +6,14 @@ using UnityEngine;
 public class broodmother : MonoBehaviour
 {
     public int totalhealth = 10;
+    public int currentHealth;
 
+    public HealthBar healthbar; 
+    private void Start()
+    {
+        currentHealth = totalhealth;
+        healthbar.SetMaxHealth(totalhealth); 
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +22,7 @@ public class broodmother : MonoBehaviour
             Destroy(collision.gameObject);
             int hea = collision.GetComponent<EnemyPath>().health;
             totalhealth -= hea;
+            healthbar.SetHealth(currentHealth); 
             if (totalhealth <= 0) {
                //SceneManager.LoadScene("GAME OVER");
                 Destroy(gameObject);
