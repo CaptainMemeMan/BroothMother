@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement; 
 using UnityEngine;
 
 public class broodmother : MonoBehaviour
@@ -15,6 +16,7 @@ public class broodmother : MonoBehaviour
             int hea = collision.GetComponent<EnemyPath>().health;
             totalhealth -= hea;
             if (totalhealth <= 0) {
+               //SceneManager.LoadScene("GAME OVER");
                 Destroy(gameObject);
             }
         }
