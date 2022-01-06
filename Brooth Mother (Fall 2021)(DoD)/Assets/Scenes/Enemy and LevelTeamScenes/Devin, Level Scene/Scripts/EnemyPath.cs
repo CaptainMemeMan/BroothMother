@@ -50,10 +50,10 @@ public class EnemyPath : MonoBehaviour
             MoveEnemy(path);
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            StartCoroutine(explode());
-        }
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    StartCoroutine(explode());
+        //}
     }
 
     private void MoveEnemy(Stack<Vector3Int> path)
@@ -74,6 +74,7 @@ public class EnemyPath : MonoBehaviour
         death = true;
         gameObject.GetComponent<Renderer>().enabled = false;
         explosion.Play();
+        GetComponent<DropCurrency>().DropCredit();
         yield return new WaitForSeconds(1.5f);
         Destroy(gameObject);
     }
