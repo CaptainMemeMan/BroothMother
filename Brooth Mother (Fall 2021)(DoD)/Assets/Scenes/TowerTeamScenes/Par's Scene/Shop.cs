@@ -7,6 +7,7 @@ public class Shop : MonoBehaviour
 {
 
     Currency money;
+    public static float cur = Currency.gold; 
     public GameObject sr_tower;
     public GameObject lr_tower;
     public GameObject bomb_tower;
@@ -18,35 +19,39 @@ public class Shop : MonoBehaviour
     public void buy_LR()
     {
        
-        if ( money.returngold() >= 70)
+        if ( Currency.gold >= 70)
         {
             Currency.gold -= 70;
+            //cur -= 70;
             GetComponentInParent<PlayerMovement>().towercarry(lr_tower);
         }
     }
 
     public void buy_SR()
     {
-        if (money.returngold() >= 50)
+        if (Currency.gold >= 50)
         {
             Currency.gold -= 50;
+          //  cur -= 50;
             GetComponentInParent<PlayerMovement>().towercarry(sr_tower);
         }
     }
     public void buy_bomb()
     {
-        if (money.returngold() >= 30)
+        if (Currency.gold >= 30)
         {
             Currency.gold -= 30;
+          //  cur -= 30; 
             GetComponentInParent<PlayerMovement>().towercarry(bomb_tower);
         }
     }
 
     public void buy_PP()
     {
-        if (money.returngold() >= 100)
+        if (Currency.gold >= 100)
         {
             Currency.gold -= 100;
+           // cur -= 100;
             GetComponentInParent<PlayerMovement>().towercarry(farm_tower);
         }
     }

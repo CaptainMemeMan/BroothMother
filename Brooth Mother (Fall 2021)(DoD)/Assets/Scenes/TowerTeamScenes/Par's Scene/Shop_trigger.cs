@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shop_trigger : MonoBehaviour
 {
-    private Shop ShopCustomer;
+    public Shop ShopCustomer;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")

@@ -41,10 +41,10 @@ public class PlayerHealth : MonoBehaviour
             hearts -= dmg;
             hs.DrawHeart(hearts, maxHearts);
         }
-        if (hearts == 0)
-        {
-            SceneManager.LoadScene("SampleScene");
-        }
+        //if (hearts == 0)
+        //{
+        //    SceneManager.LoadScene("SampleScene");
+        //}
     }
 
     public void HealPlayer(int dmg)
