@@ -362,9 +362,9 @@ GameObject:
   - component: {fileID: 6578931959891726507}
   - component: {fileID: 5805272455602823705}
   - component: {fileID: 496422509707676694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: broodmother
-  m_TagString: Untagged
+  m_TagString: Shop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
