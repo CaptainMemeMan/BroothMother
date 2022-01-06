@@ -21,7 +21,8 @@ public class broodmother : MonoBehaviour
         if (collision.gameObject.tag == "enemy") {
             Destroy(collision.gameObject);
             int hea = collision.GetComponent<EnemyPath>().health;
-            totalhealth -= hea;
+            currentHealth -= hea;
+            Debug.Log("Hit");
             healthbar.SetHealth(currentHealth); 
             if (totalhealth <= 0) {
                //SceneManager.LoadScene("GAME OVER");
