@@ -18,7 +18,7 @@ public class spawning : MonoBehaviour
         if (timer <= 1)
         {
             StartCoroutine(SpawnWave());
-            timer = 6.0f;
+            timer = 60.0f;
         }
 
         timer -= Time.deltaTime;
