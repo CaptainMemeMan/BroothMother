@@ -27,11 +27,13 @@ public class DropCurrency : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            currHealth.updatehealth(1);
-            DropCredit();
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    currHealth.updatehealth(1);
+        //    DropCredit();
+        //}
+
+       
     }
 
 
