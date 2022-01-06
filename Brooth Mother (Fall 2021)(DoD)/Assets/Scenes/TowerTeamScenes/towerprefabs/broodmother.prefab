@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 117361140710113039}
   - component: {fileID: 2865283014506385827}
   - component: {fileID: 8698364594833358945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shop Trigger
   m_TagString: Shop
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02920127, y: 0.007300377}
+  m_Offset: {x: -0.038221717, y: 0.14035165}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -156,7 +156,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4146571, y: 1.4000568}
+  m_Size: {x: 2.9300888, y: 2.126201}
   m_EdgeRadius: 0
 --- !u!114 &8698364594833358945
 MonoBehaviour:
