@@ -6,7 +6,13 @@ public class EnemyPath : MonoBehaviour
 {
     [SerializeField]
     private Transform enemy;
+
     public int health = 5;
+
+    private bool death = false;
+
+    [SerializeField]
+    private ParticleSystem explosion;
 
     private Stack<Vector3Int> path = null;
 
@@ -39,9 +45,14 @@ public class EnemyPath : MonoBehaviour
             destination = enemy.position;
         }*/
 
-        if (path != null)
+        if (path != null && death == false)
         {
             MoveEnemy(path);
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            StartCoroutine(explode());
         }
     }
 
@@ -58,18 +69,23 @@ public class EnemyPath : MonoBehaviour
         //Debug.Log(path.Count);
     }
 
+    private IEnumerator explode()
+    {
+        death = true;
+        gameObject.GetComponent<Renderer>().enabled = false;
+        explosion.Play();
+        yield return new WaitForSeconds(1.5f);
+        Destroy(gameObject);
+    }
 
     public void updatehealth(int hea) {
-
-
         health -= hea;
+
         if (health <= 0) {
-            Destroy(gameObject);
+            StartCoroutine(explode());
         }
-  
-    
-    
-    
     }
+
+
 
 }

@@ -6,7 +6,7 @@ public class DropCurrency : MonoBehaviour
 {
     public int credits = 1;
 
-    private Vector3 enemyPos; 
+    private Vector3 enemyPos;
 
     private bool dropOnce = false;
 

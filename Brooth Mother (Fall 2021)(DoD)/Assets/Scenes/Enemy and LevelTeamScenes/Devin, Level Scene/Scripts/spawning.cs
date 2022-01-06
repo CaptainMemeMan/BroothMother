@@ -6,20 +6,37 @@ public class spawning : MonoBehaviour
 {
 
     public GameObject enemy;
-    // Start is called before the first frame update
-    public float timer = 5.0f;
-    public float wait = 1.0f;
+
+    public float timer = 2.0f;
+    public float wait = 6.0f;
+
+    public int waveNum = 0;
+
     // Update is called once per frame
     void Update()
     {
         if (timer <= 1)
         {
-            Instantiate(enemy, transform.position, Quaternion.identity);
-            timer = 5.0f;
+            StartCoroutine(SpawnWave());
+            timer = 6.0f;
         }
-        else {
-            timer -= Time.deltaTime;
 
+        timer -= Time.deltaTime;
+    }
+
+    IEnumerator SpawnWave()
+    {
+        waveNum++;
+
+        for (int i = 0; i < waveNum; i++)
+        {
+            SpawnEnemy();
+            yield return new WaitForSeconds(0.75f);
         }
+    }
+
+    void SpawnEnemy()
+    {
+        Instantiate(enemy, transform.position, Quaternion.identity);
     }
 }
