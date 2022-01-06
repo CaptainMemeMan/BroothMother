@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac64cfa8b50f89c478a35041ec19a610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShopCustomer: {fileID: 7436555507578784687, guid: 04f668d35ed49a74683feb58be6d0652, type: 3}
+  ShopCustomer: {fileID: 0}
 --- !u!1 &5014772140962500165
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalhealth: 100
+  currentHealth: 0
+  healthbar: {fileID: 7657538899941460143}
 --- !u!61 &496422509707676694
 BoxCollider2D:
   m_ObjectHideFlags: 0
