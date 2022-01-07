@@ -380,6 +380,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4362924015338486186, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362924015338486186, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f8a8625de9fa4864ea76ab328fb7f93a, type: 3}
     - target: {fileID: 4996863989973455188, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -428,7 +436,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawning
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5821336762470338499, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 143
+      objectReference: {fileID: 0}
+    - target: {fileID: 5821336762470338499, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276037589134533845, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933748530846291834, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 82.1378
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933748530846291834, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -856.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6933748530846291834, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -491.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571751300385041330, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 10298233773163353, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ee4eb71d3d8c0e64aad0f8c350652e9b, type: 3}
 --- !u!1839735485 &1138168274 stripped
 Tilemap:

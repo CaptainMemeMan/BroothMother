@@ -263,7 +263,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -358,14 +358,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7118891867100245089, guid: 11d22d9f2a21d71448d677c0442bfa91, type: 3}
-      propertyPath: m_Radius
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118891867100245089, guid: 11d22d9f2a21d71448d677c0442bfa91, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7118891867100245095, guid: 11d22d9f2a21d71448d677c0442bfa91, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -414,32 +406,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Whole bomb tower 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7118891867100245090, guid: 11d22d9f2a21d71448d677c0442bfa91, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d22d9f2a21d71448d677c0442bfa91, type: 3}
---- !u!1 &2123855901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7118891867100245116, guid: 11d22d9f2a21d71448d677c0442bfa91, type: 3}
-  m_PrefabInstance: {fileID: 1096025167}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &2123855906
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123855901}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
