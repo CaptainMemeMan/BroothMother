@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKey("space"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             towerplacement();
         }
