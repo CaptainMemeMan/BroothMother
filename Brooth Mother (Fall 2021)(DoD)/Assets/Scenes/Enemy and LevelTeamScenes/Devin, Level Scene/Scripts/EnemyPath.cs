@@ -7,7 +7,12 @@ public class EnemyPath : MonoBehaviour
     [SerializeField]
     private Transform enemy;
 
+    [SerializeField]
+    private GameObject parent;
+
     public int health = 5;
+
+    public float speed = 0.005f;
 
     private bool death = false;
 
@@ -64,7 +69,7 @@ public class EnemyPath : MonoBehaviour
             //Debug.Log("Destination " + destination);
         }    
 
-        enemy.position = Vector3.MoveTowards(enemy.position, destination, 0.005f);
+        enemy.position = Vector3.MoveTowards(enemy.position, destination, speed);
         //Debug.Log("Moving towards");
         //Debug.Log(path.Count);
     }
@@ -76,7 +81,7 @@ public class EnemyPath : MonoBehaviour
         explosion.Play();
         GetComponent<DropCurrency>().DropCredit();
         yield return new WaitForSeconds(1.5f);
-        Destroy(gameObject);
+        Destroy(parent);
     }
 
     public void updatehealth(int hea) {

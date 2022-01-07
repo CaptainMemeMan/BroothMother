@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3581678470813572096}
   - component: {fileID: 5353600468599493320}
   m_Layer: 0
-  m_Name: EnemyParent
+  m_Name: TankParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,6 +61,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3581678470813572096}
     m_Modifications:
+    - target: {fileID: 6286738862438858736, guid: 2003138a3512265449baea3092e36060, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3012985
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286738862438858736, guid: 2003138a3512265449baea3092e36060, type: 3}
+      propertyPath: m_Color.g
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286738862438858736, guid: 2003138a3512265449baea3092e36060, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6286738862438858737, guid: 2003138a3512265449baea3092e36060, type: 3}
       propertyPath: AStar
       value: 
@@ -71,7 +83,11 @@ PrefabInstance:
       objectReference: {fileID: 3581678470813572096}
     - target: {fileID: 6286738862438858737, guid: 2003138a3512265449baea3092e36060, type: 3}
       propertyPath: speed
-      value: 0.005
+      value: 0.0025
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286738862438858737, guid: 2003138a3512265449baea3092e36060, type: 3}
+      propertyPath: health
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6286738862438858737, guid: 2003138a3512265449baea3092e36060, type: 3}
       propertyPath: parent
