@@ -24,7 +24,7 @@ public class broodmother : MonoBehaviour
             currentHealth -= hea;
             Debug.Log("Hit");
             healthbar.SetHealth(currentHealth); 
-            if (totalhealth <= 0) {
+            if (currentHealth <= 0) {
                 SceneManager.LoadScene("GameOver");
                 Destroy(gameObject);
             }
