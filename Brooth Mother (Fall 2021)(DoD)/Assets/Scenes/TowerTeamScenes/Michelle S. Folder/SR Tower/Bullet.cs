@@ -33,6 +33,7 @@ public class Bullet : MonoBehaviour
             collision.GetComponent<EnemyPath>().updatehealth(damage);
         
         }
+
         //else if (collision.gameObject.tag == "Player")
         //{
         //    collision.GetComponent<PlayerHealth>().DamagePlayer(1);
