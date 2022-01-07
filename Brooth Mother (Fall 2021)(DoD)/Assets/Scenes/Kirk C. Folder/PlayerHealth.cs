@@ -43,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if (hearts == 0)
         {
-            //SceneManager.LoadScene("GAME OVER");
+            SceneManager.LoadScene("GameOver");
         }
     }
 

@@ -1,21 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; 
+using System.Collections;
+using UnityEngine.UI; 
 
 public class GameManger : MonoBehaviour
 {
-    //bool gameHasEnded = false; 
-    //public void EndGame()
-    //{
-    //    if(gameHasEnded == false)
-    //    {
-    //        gameHasEnded = true;
-    //        Debug.Log("fornite");
 
-    //    }
-       
-    //}
-
-    //private void Reset()
-    //{
-        
-    //}
+    public void Restart()
+    {
+        SceneManager.LoadScene("Level");
+    }
+    public void StopGame()
+    {
+        Application.Quit(); 
+    }
 }
