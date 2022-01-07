@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7118891867100245090}
   - component: {fileID: 7118891867100245091}
   - component: {fileID: -2426879766745639108}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Whole bomb tower 1
   m_TagString: Bullet
   m_Icon: {fileID: 0}

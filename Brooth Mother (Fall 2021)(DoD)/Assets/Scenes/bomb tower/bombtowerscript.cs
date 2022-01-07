@@ -12,18 +12,20 @@ public class bombtowerscript : MonoBehaviour
     public float explosionRadius = 5;
     private CircleCollider2D CollisionDetector;
     public string targetTag = "enemy";
+    animator boom;
 
     public void Start()
     {
         CollisionDetector = this.GetComponent<CircleCollider2D>();
         //CollisionDetector.radius = explosionRadius;
+        boom = GetComponent<animator>();
     }
 
     public void deleteBombTower()
     {
         //toggletime(false);
-
-        Destroy(this.gameObject);
+        
+        Destroy(this.gameObject,.6f);
         
     }
 
