@@ -4,10 +4,11 @@ using UnityEngine; //callout PP
 
 public class PP : MonoBehaviour
 {   private float startTime;
-    public float points = 10; //Variable for the monies
+    public float points = 25; //Variable for the monies
     float t;
     float sec;
-    private float timeStamp = 1f;
+    bool collect = false;
+    private float timeStamp = 10f;
     public float cooldownperiod = 10f;
     GameObject dollar;
     // Start is called before the first frame update
@@ -21,18 +22,15 @@ public class PP : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
+        if(!collect)
         t += Time.deltaTime; // - startTime;
                              //displaySeconds= seconds % 60;
                              //sec = (t % 60);
 
-        if (timeStamp <= Time.time) //attach a cooldown timer for the dash 
+        if (timeStamp <= Time.time ) //attach a cooldown timer for the dash 
         {
             dollar.SetActive(true);
-            Currency.gold = Currency.gold + points;
-            //t = 0;
-            //points = 0;
-            timeStamp = Time.time + cooldownperiod;
-            Debug.Log("Added" + Currency.gold);
+            collect = true;
 
         }
 
@@ -45,5 +43,21 @@ public class PP : MonoBehaviour
    
     }
 
-    
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collect) { 
+            Currency.gold = Currency.gold + points;
+            //t = 0;
+            //points = 0;
+            dollar.SetActive(false);
+            collect = false;
+            timeStamp = Time.time + cooldownperiod;
+    }
+    }
+
+
+
+
 }   
