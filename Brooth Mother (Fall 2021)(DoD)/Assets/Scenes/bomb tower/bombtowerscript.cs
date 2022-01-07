@@ -25,7 +25,7 @@ public class bombtowerscript : MonoBehaviour
     {
         //toggletime(false);
         
-        Destroy(this.gameObject,.6f);
+      
         
     }
 
@@ -117,9 +117,10 @@ public class bombtowerscript : MonoBehaviour
 
     IEnumerator deathSequence()
     {
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(2f);
+        boom.enabled = true;
         damageNearby();
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, .6f);
     }
 
 }
