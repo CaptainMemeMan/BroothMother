@@ -9,22 +9,19 @@ public class spawning : MonoBehaviour
 
     public float timer = 2.0f;
     public float wait = 6.0f;
-
+    public bool over = false;
     public int waveNum = 0;
 
     // Update is called once per frame
-    void Update()
-    {
-        if (timer <= 1)
-        {
-            StartCoroutine(SpawnWave());
-            timer = 60.0f;
-        }
 
-        timer -= Time.deltaTime;
+
+
+    public void earlywave(){
+        StartCoroutine(SpawnWave());
     }
 
-    IEnumerator SpawnWave()
+
+   public IEnumerator SpawnWave()
     {
         waveNum++;
 
@@ -33,9 +30,10 @@ public class spawning : MonoBehaviour
             SpawnEnemy();
             yield return new WaitForSeconds(0.75f);
         }
+
     }
 
-    void SpawnEnemy()
+   public void SpawnEnemy()
     {
         Instantiate(enemy, transform.position, Quaternion.identity);
     }
