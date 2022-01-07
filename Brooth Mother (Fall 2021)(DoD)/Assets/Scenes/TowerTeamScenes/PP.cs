@@ -9,10 +9,12 @@ public class PP : MonoBehaviour
     float sec;
     private float timeStamp = 1f;
     public float cooldownperiod = 10f;
+    GameObject dollar;
     // Start is called before the first frame update
     void Start()
     {   //points = 0;
-        t=0;
+            dollar = transform.Find("dollar").gameObject;
+        t =0;
         //startTime = Time.deltaTime; Callout Time; (Not nessesary)
     }
 
@@ -25,6 +27,7 @@ public class PP : MonoBehaviour
 
         if (timeStamp <= Time.time) //attach a cooldown timer for the dash 
         {
+            dollar.SetActive(true);
             Currency.gold = Currency.gold + points;
             //t = 0;
             //points = 0;
