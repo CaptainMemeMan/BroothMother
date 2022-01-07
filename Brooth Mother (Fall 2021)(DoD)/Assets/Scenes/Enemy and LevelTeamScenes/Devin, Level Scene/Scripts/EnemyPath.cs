@@ -50,7 +50,7 @@ public class EnemyPath : MonoBehaviour
             destination = enemy.position;
         }*/
 
-        if (path != null && death == false)
+        if (path != null && death == false && PauseManger.GameIsPaused == false) 
         {
             MoveEnemy(path);
         }
