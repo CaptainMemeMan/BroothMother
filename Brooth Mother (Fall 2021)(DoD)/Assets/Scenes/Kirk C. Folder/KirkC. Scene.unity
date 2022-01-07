@@ -689,14 +689,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: broodmother
       objectReference: {fileID: 0}
-    - target: {fileID: 7840545367505752971, guid: d8c3f929bb8399f4994329282e186f18, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7840545367505752971, guid: d8c3f929bb8399f4994329282e186f18, type: 3}
-      propertyPath: m_TagString
-      value: Shop
-      objectReference: {fileID: 0}
     - target: {fileID: 8698364594833358945, guid: d8c3f929bb8399f4994329282e186f18, type: 3}
       propertyPath: ShopCustomer
       value: 
