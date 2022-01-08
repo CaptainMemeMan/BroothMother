@@ -9,6 +9,7 @@ TagManager:
   - enemy
   - Bullet
   - Shop
+  - HealthPickUp
   layers:
   - Default
   - TransparentFX

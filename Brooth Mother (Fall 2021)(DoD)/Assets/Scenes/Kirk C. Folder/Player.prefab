@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 47020846306754772}
   - component: {fileID: 722704921}
   - component: {fileID: 3291800310296408046}
+  - component: {fileID: 5347615626314849766}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -525,7 +526,7 @@ Transform:
   m_GameObject: {fileID: 47020846306754793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0669332, y: 3.0669332, z: 3.0669332}
+  m_LocalScale: {x: 1, y: 1, z: 3.0669332}
   m_Children:
   - {fileID: 7921719263514634226}
   - {fileID: 1247438356}
@@ -575,7 +576,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 50
-  m_Sprite: {fileID: 21300000, guid: 5d52b20f865aff242bfcb08c3b6f61a5, type: 3}
+  m_Sprite: {fileID: -8996547973696683115, guid: b94f97544e272464488e8125cd5db208, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -658,7 +659,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.5, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -680,6 +681,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausemenuUi: {fileID: 991385048739265113}
+--- !u!95 &5347615626314849766
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47020846306754793}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13fd8619d735d4344b939af68ae35633, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6505417687979074822
 GameObject:
   m_ObjectHideFlags: 0

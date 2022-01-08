@@ -103,7 +103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
+  parent: {fileID: 0}
   health: 5
+  speed: 0.005
   explosion: {fileID: 6480820876271531573}
   AStar: {fileID: 0}
 --- !u!111 &1802033327756459739
