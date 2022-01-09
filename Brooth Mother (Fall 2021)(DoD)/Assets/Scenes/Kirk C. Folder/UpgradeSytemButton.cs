@@ -5,13 +5,14 @@ using UnityEngine;
 public class UpgradeSytemButton : MonoBehaviour
 {
     private bool EisPressed;
-
+    public UpgradeSystem fornite; 
     
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && EisPressed)
         {
-           
+            fornite.Show();
+
             Debug.Log("Player IN");
         }
         
@@ -21,9 +22,9 @@ public class UpgradeSytemButton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            EisPressed = true; 
-           // Debug.Log("Player IN");
-          //  ShopCustomer.Show();
+            EisPressed = true;
+            // Debug.Log("Player IN");
+           
         }
     }
 
@@ -33,22 +34,10 @@ public class UpgradeSytemButton : MonoBehaviour
         {
             EisPressed = false; 
             Debug.Log("Player Out");
-            //ShopCustomer.Hide();
+            fornite.Hide(); 
         }
     }
 
 
-    public void selltower()
-    {
-
-    }
-
-    public void upgradespeed()
-    {
-
-    }
-
-    public void upgradedamage() { 
-    
-    }
+   
 }
