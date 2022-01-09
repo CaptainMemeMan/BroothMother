@@ -29,6 +29,15 @@ public class spawning : MonoBehaviour
     {
         waveNum++;
 
+        if (waveNum % 3 == 0)
+        {
+            for (int i = 0; i < waveNum / 3; i++)
+            {
+                SpawnTank();
+                yield return new WaitForSeconds(1.0f);
+            }
+        }
+
         for (int i = 0; i < waveNum; i++)
         {
             SpawnEnemy();
@@ -41,15 +50,6 @@ public class spawning : MonoBehaviour
             {
                 SpawnFast();
                 yield return new WaitForSeconds(0.5f);
-            }
-        }
-
-        if (waveNum % 3 == 0)
-        {
-            for (int i = 0; i < waveNum / 3; i++)
-            {
-                SpawnTank();
-                yield return new WaitForSeconds(1.0f);
             }
         }
 

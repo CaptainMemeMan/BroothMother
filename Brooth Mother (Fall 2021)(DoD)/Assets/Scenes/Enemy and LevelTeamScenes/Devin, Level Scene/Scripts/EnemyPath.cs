@@ -69,7 +69,7 @@ public class EnemyPath : MonoBehaviour
             //Debug.Log("Destination " + destination);
         }    
 
-        enemy.position = Vector3.MoveTowards(enemy.position, destination, speed);
+        enemy.position = Vector3.MoveTowards(enemy.position, destination, speed * Time.deltaTime);
         //Debug.Log("Moving towards");
         //Debug.Log(path.Count);
     }
