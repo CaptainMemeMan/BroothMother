@@ -6,7 +6,7 @@ using UnityEngine;
 public class PauseManger : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    
+    public AudioSource resume;
 
     public GameObject pausemenuUi;
 
@@ -30,9 +30,11 @@ public class PauseManger : MonoBehaviour
     }
     public void Resume()
     {
+       
         GameIsPaused = false;
         pausemenuUi.SetActive(false);
         Time.timeScale = 1f;
+
         Debug.Log("resume");
     }
     public void Pause()

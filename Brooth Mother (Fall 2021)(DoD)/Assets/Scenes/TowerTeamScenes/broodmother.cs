@@ -8,9 +8,11 @@ public class broodmother : MonoBehaviour
     public int totalhealth = 10;
     public int currentHealth;
 
+
     public HealthBar healthbar; 
     private void Start()
     {
+  
         currentHealth = totalhealth;
         healthbar.SetMaxHealth(totalhealth); 
     }
