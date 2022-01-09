@@ -7,8 +7,14 @@ public class rotate : MonoBehaviour
 
     public GameObject target;
     public bool place;
-    private float speed = 5f; 
-    
+    private float speed = 5f;
+    SpriteRenderer colorchna;
+
+    private void Start()
+    {
+        colorchna = GetComponent<SpriteRenderer>();     
+    }
+
 
     public void Update()
     {
@@ -30,11 +36,14 @@ public class rotate : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         place = true;
+        colorchna.color = new Color(.72f, 0f, .03f, .5f);
     }
 
 
    void OnTriggerExit2D(Collider2D collision)
     {
+
+        colorchna.color = new Color(233, 255, 255, 255);
         place = false;
     }
 

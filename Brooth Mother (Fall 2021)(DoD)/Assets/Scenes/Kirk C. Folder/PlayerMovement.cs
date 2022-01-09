@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5f; //the float 
-    GameObject cir;
+   public GameObject cir;
     public  GameObject tow;
     public Rigidbody2D rb; //access rigidbody in order to make the player move
     
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         cir.GetComponent<SpriteRenderer>().sprite = tow.GetComponent<SpriteRenderer>().sprite;
 
         cir.SetActive(true);
-      
+   
 
     }
 

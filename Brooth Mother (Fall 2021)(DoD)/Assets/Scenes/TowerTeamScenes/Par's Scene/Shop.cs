@@ -19,7 +19,7 @@ public class Shop : MonoBehaviour
     public void buy_LR()
     {
        
-        if ( Currency.gold >= 70)
+        if ( Currency.gold >= 70 && !checkcir())
         {
             Currency.gold -= 70;
             //cur -= 70;
@@ -29,7 +29,7 @@ public class Shop : MonoBehaviour
 
     public void buy_SR()
     {
-        if (Currency.gold >= 50)
+        if (Currency.gold >= 50 && !checkcir())
         {
             Currency.gold -= 50;
           //  cur -= 50;
@@ -38,7 +38,7 @@ public class Shop : MonoBehaviour
     }
     public void buy_bomb()
     {
-        if (Currency.gold >= 30)
+        if (Currency.gold >= 30 && !checkcir())
         {
             Currency.gold -= 30;
           //  cur -= 30; 
@@ -48,7 +48,7 @@ public class Shop : MonoBehaviour
 
     public void buy_PP()
     {
-        if (Currency.gold >= 100)
+        if (Currency.gold >= 100 && !checkcir())
         {
             Currency.gold -= 100;
            // cur -= 100;
@@ -70,6 +70,14 @@ public class Shop : MonoBehaviour
     public void Hide()
     {
         this.gameObject.SetActive(false);
+    }
+
+
+    bool checkcir() {
+
+        return GetComponentInParent<PlayerMovement>().cir.activeSelf;
+
+
     }
 
 }
