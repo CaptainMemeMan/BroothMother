@@ -36,7 +36,10 @@ public class spawning : MonoBehaviour
 
 
     public void earlywave(){
-        StartCoroutine(SpawnWave());
+        if (enemiesOnScreen == false)
+        {
+            StartCoroutine(SpawnWave());
+        }
     }
 
 
