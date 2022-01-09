@@ -117,10 +117,10 @@ public class bombtowerscript : MonoBehaviour
 
     IEnumerator deathSequence()
     {
-        yield return new WaitForSeconds(2f);
+       yield return new WaitForSeconds(.1f);
         boom.enabled = true;
         damageNearby();
-        Destroy(this.gameObject, .6f);
+        Destroy(this.gameObject, .5f);
     }
 
 }
