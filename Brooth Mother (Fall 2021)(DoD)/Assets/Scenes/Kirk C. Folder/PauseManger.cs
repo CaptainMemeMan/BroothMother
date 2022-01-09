@@ -6,8 +6,14 @@ using UnityEngine;
 public class PauseManger : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    
 
     public GameObject pausemenuUi;
+
+    //private void Awake()
+    //{
+    //    goldreset = GetComponent<Currency>();
+    //}
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -40,6 +46,7 @@ public class PauseManger : MonoBehaviour
 
     public void LoadMenu()
     {
+        
         SceneManager.LoadScene("menu");
     }
     public void QuitGame()
