@@ -36,4 +36,19 @@ public class UpgradeSytemButton : MonoBehaviour
             //ShopCustomer.Hide();
         }
     }
+
+
+    public void selltower()
+    {
+
+    }
+
+    public void upgradespeed()
+    {
+
+    }
+
+    public void upgradedamage() { 
+    
+    }
 }
