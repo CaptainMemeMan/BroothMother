@@ -10,14 +10,29 @@ public class spawning : MonoBehaviour
 
     public GameObject enemy;
 
+    private GameObject[] enemyObjects;
+
     public float timer = 2.0f;
     public float wait = 6.0f;
     public bool over = false;
     public int waveNum = 0;
 
+    public bool enemiesOnScreen = false;
 
     // Update is called once per frame
+    public void Update()
+    {
+        enemyObjects = findEnemys();
 
+        if(enemyObjects.Length > 0)
+        {
+            enemiesOnScreen = true;
+        }
+        else
+        {
+            enemiesOnScreen = false;
+        }
+    }
 
 
     public void earlywave(){
@@ -55,18 +70,23 @@ public class spawning : MonoBehaviour
 
     }
 
-   public void SpawnEnemy()
+   private void SpawnEnemy()
     {
         Instantiate(enemy, transform.position, Quaternion.identity);
     }
 
-    public void SpawnTank()
+    private void SpawnTank()
     {
         Instantiate(tank, transform.position, Quaternion.identity);
     }
 
-    public void SpawnFast()
+    private void SpawnFast()
     {
         Instantiate(fast, transform.position, Quaternion.identity);
+    }
+
+    private GameObject[] findEnemys()
+    {
+        return GameObject.FindGameObjectsWithTag("enemy");
     }
 }
