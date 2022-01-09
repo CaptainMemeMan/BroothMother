@@ -91,8 +91,6 @@ public class PlayerMovement : MonoBehaviour
     void towerplacement() {
         if (!cir.GetComponent<rotate>().place && cir.activeSelf) {
 
-
-
             Instantiate(tow, cir.transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));                                               
 
             cir.SetActive(false);
