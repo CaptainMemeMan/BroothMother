@@ -7,25 +7,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1603130921016612965, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7833829895625774919}
+    - target: {fileID: 1603130921016612965, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: upgradedamage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603130921016612965, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UpgradeLR, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603130921016612965, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3225989716473264861, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_Name
-      value: UpgradeSystemLR
+      value: UpgradeSystemLR Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,34 +71,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2822416749276391152, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-    - {fileID: 2952426565844065215, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 3589587159018370523, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_text
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001775726716499785, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7833829895625774919}
+    - target: {fileID: 5001775726716499785, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: sellLRtower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001775726716499785, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UpgradeLR, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001775726716499785, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526029711928421636, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_text
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551907185325590333, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7833829895625774919}
+    - target: {fileID: 5551907185325590333, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: upgradespeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551907185325590333, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UpgradeLR, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551907185325590333, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748445235640650511, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      propertyPath: m_text
+      value: 50
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
 --- !u!1 &8631804829452587265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3225989716473264861, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
   m_PrefabInstance: {fileID: 6561551470749445084}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &943678097558693287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6203654020448063099, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+--- !u!114 &7833829895625774919 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4014970632317598875, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
   m_PrefabInstance: {fileID: 6561551470749445084}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &436248984088641292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943678097558693287}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9bccdd195650c34e8359d086e105266, type: 3}
+  m_Script: {fileID: 11500000, guid: 62e4622ed9a46df469e4424672b55bbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fornite: {fileID: 7505319396264593970}
---- !u!114 &7505319396264593970
+--- !u!114 &3156656811404834744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,6 +142,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8631804829452587265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e4622ed9a46df469e4424672b55bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: d9bccdd195650c34e8359d086e105266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fornite: {fileID: 7833829895625774919}
