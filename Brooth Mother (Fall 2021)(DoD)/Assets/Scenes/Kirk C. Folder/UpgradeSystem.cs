@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UpgradeSystem : MonoBehaviour
 {
-    public GameObject Tower; 
+   
 
     private void Start()
     {
