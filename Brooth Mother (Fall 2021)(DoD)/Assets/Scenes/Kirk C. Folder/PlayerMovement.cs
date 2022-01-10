@@ -6,9 +6,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5f; //the float 
-   public GameObject cir;
+    public GameObject cir;
     public  GameObject tow;
     public Rigidbody2D rb; //access rigidbody in order to make the player move
+    public SpriteRenderer playerSprite;
     
     private Vector2 movement; //stores x and y 
     private float timeStamp = 1f;
@@ -44,6 +45,14 @@ public class PlayerMovement : MonoBehaviour
             towerplacement();
         }
 
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            playerSprite.flipX = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            playerSprite.flipX = true;
+        }
         /*
         if (Input.GetKeyDown("space")) {
             towercarry(tow);

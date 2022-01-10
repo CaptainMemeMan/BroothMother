@@ -544,6 +544,7 @@ MonoBehaviour:
   cir: {fileID: 0}
   tow: {fileID: 5877139770530805704, guid: fc6e8e8abe5b83f4ab55f657632f2bf2, type: 3}
   rb: {fileID: 47020846306754792}
+  playerSprite: {fileID: 47020846306754775}
   cooldownperiod: 2
   addAmount: 1
 --- !u!114 &47020846306754772
