@@ -413,6 +413,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 47020846306754775, guid: a7ec8f6b4deb4f742b7ec23069625add, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 47020846306754775, guid: a7ec8f6b4deb4f742b7ec23069625add, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 47020846306754793, guid: a7ec8f6b4deb4f742b7ec23069625add, type: 3}
       propertyPath: m_Name
       value: Player
@@ -478,6 +486,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 334719272, guid: 875a1b8ee36ba5a46a1f6e9897c8e822, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1511210069767760513, guid: 875a1b8ee36ba5a46a1f6e9897c8e822, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3629,7 +3641,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8296f25fc2bcc7240bae0d13b671a4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fornite: {fileID: 1446216061}
 --- !u!1 &2041624374 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1777935439445389241, guid: 539ff6ea027cd6c41b843b61da88ea70, type: 3}
