@@ -17,7 +17,7 @@ public class spawning : MonoBehaviour
     public bool over = false;
     public int waveNum = 0;
 
-    public bool enemiesOnScreen = false;
+    public static bool enemiesOnScreen = false;
 
     // Update is called once per frame
     public void Update()
