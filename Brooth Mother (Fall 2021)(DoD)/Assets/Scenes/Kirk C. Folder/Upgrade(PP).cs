@@ -6,39 +6,39 @@ public class UpgradeSystem : MonoBehaviour
 {
    
 
-    private void Start()
-    {
-        Hide();
-    }
+    //private void Start()
+    //{
+    //    Hide();
+    //}
 
 
-    public void Show()
-    {
-        this.gameObject.SetActive(true);
-    }
+    //public void Show()
+    //{
+    //    this.gameObject.SetActive(true);
+    //}
 
-    public void Hide()
-    {
-        this.gameObject.SetActive(false);
-    }
-
-
-
+    //public void Hide()
+    //{
+    //    this.gameObject.SetActive(false);
+    //}
 
 
 
-    public void selltower()
-    {
+
+
+
+    //public void selltower()
+    //{
         
-    }
+    //}
 
-    public void upgradespeed()
-    {
+    //public void upgradespeed()
+    //{
 
-    }
+    //}
 
-    public void upgradedamage()
-    {
+    //public void upgradedamage()
+    //{
 
-    }
+    //}
 }

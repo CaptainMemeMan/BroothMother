@@ -4,39 +4,39 @@ using UnityEngine;
 
 public class UpgradeSytemButton : MonoBehaviour
 {
-    private bool EisPressed;
-    public UpgradeSystem fornite; 
+    //private bool EisPressed;
+    //public UpgradeSystem fornite; 
     
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && EisPressed)
-        {
-            fornite.Show();
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.E) && EisPressed)
+    //    {
+    //        fornite.Show();
 
-            Debug.Log("Player IN");
-        }
+    //        Debug.Log("Player IN");
+    //    }
         
-    }
-    // public Shop ShopCustomer;
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            EisPressed = true;
-            // Debug.Log("Player IN");
+    //}
+    //// public Shop ShopCustomer;
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        EisPressed = true;
+    //        // Debug.Log("Player IN");
            
-        }
-    }
+    //    }
+    //}
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            EisPressed = false; 
-            Debug.Log("Player Out");
-            fornite.Hide(); 
-        }
-    }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        EisPressed = false; 
+    //        Debug.Log("Player Out");
+    //        fornite.Hide(); 
+    //    }
+    //}
 
 
    
