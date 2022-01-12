@@ -251,6 +251,10 @@ PrefabInstance:
       propertyPath: bulletspeed
       value: 
       objectReference: {fileID: 7281384220064052585}
+    - target: {fileID: 5876620213924690105, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
     - target: {fileID: 6605213282011612956, guid: 0384f588f13d83a499e084abe3180513, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 653.3
@@ -258,6 +262,14 @@ PrefabInstance:
     - target: {fileID: 6605213282011612956, guid: 0384f588f13d83a499e084abe3180513, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -101.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980156825922368128, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 813
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980156825922368128, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 7833829895625774919, guid: 0384f588f13d83a499e084abe3180513, type: 3}
       propertyPath: LR
@@ -338,6 +350,10 @@ PrefabInstance:
     - target: {fileID: 8631804829452587388, guid: 0384f588f13d83a499e084abe3180513, type: 3}
       propertyPath: m_Offset.y
       value: -0.15168568
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748849954326646060, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: m_Maskable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0384f588f13d83a499e084abe3180513, type: 3}
