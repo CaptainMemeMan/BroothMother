@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1603130921016612965, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7833829895625774919}
+      objectReference: {fileID: 0}
     - target: {fileID: 1603130921016612965, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: upgradedamage
@@ -78,7 +78,7 @@ PrefabInstance:
     - target: {fileID: 5001775726716499785, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7833829895625774919}
+      objectReference: {fileID: 3471543234762898143}
     - target: {fileID: 5001775726716499785, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: sellLRtower
@@ -98,7 +98,7 @@ PrefabInstance:
     - target: {fileID: 5551907185325590333, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7833829895625774919}
+      objectReference: {fileID: 0}
     - target: {fileID: 5551907185325590333, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: upgradespeed
@@ -115,24 +115,34 @@ PrefabInstance:
       propertyPath: m_text
       value: 50
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2016214571, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - {fileID: 1446216062, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
 --- !u!1 &8631804829452587265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3225989716473264861, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
   m_PrefabInstance: {fileID: 6561551470749445084}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7833829895625774919 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4014970632317598875, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+--- !u!1 &943678097558693287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6203654020448063099, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
   m_PrefabInstance: {fileID: 6561551470749445084}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &3471543234762898143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943678097558693287}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62e4622ed9a46df469e4424672b55bbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LR: {fileID: 0}
+  bulletspeed: {fileID: 0}
 --- !u!114 &3156656811404834744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,4 +155,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9bccdd195650c34e8359d086e105266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fornite: {fileID: 7833829895625774919}
+  fornite: {fileID: 3471543234762898143}

@@ -219,6 +219,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1586118534192377057, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5378517132429185898}
+    - target: {fileID: 1586118534192377057, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: upgradespeed
+      objectReference: {fileID: 0}
     - target: {fileID: 1711146800205334232, guid: 0384f588f13d83a499e084abe3180513, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
@@ -235,6 +243,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -101.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3471543234762898143, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: LR
+      value: 
+      objectReference: {fileID: 7281384220064052589}
+    - target: {fileID: 3471543234762898143, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: bulletspeed
+      value: 
+      objectReference: {fileID: 7281384220064052585}
     - target: {fileID: 6605213282011612956, guid: 0384f588f13d83a499e084abe3180513, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 653.3
@@ -330,3 +346,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8631804829452587266, guid: 0384f588f13d83a499e084abe3180513, type: 3}
   m_PrefabInstance: {fileID: 8829644585349720501}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5378517132429185898 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3471543234762898143, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+  m_PrefabInstance: {fileID: 8829644585349720501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e4622ed9a46df469e4424672b55bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

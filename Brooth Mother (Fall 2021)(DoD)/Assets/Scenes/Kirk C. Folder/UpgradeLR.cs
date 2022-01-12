@@ -40,7 +40,7 @@ public class UpgradeLR : MonoBehaviour
 
     public void upgradespeed()
     {
-        if (bulletspeed.ShootDelay > 1)
+        if (bulletspeed.ShootDelay > 1 && Currency.gold >= 50)
         {
             bulletspeed.ShootDelay = bulletspeed.ShootDelay - 0.25f;
             Currency.gold -= 50;

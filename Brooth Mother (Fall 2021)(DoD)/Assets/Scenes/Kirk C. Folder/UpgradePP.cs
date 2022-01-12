@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class UpgradePP : MonoBehaviour
 {
+    public GameObject PP;
+    public PP poop; 
     private void Start()
     {
+        
         Hide();
     }
 
@@ -25,21 +28,20 @@ public class UpgradePP : MonoBehaviour
 
     public void MoreMoney()
     {
-
+        if (Currency.gold >= 50 && poop.points < 40)
+        {
+            poop.points = poop.points + 5;
+            Currency.gold -= 50; 
+            Debug.Log(poop.points);
+        }
     }
 
     public void sellPPtower()
     {
-
+        Debug.Log("Sell");
+        Currency.gold += 50;
+        Destroy(PP);
     }
 
-    //public void upgradespeed()
-    //{
-
-    //}
-
-    //public void upgradedamage()
-    //{
-
-    //}
+   
 }

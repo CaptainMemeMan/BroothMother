@@ -545,6 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3225989716473264862}
   - component: {fileID: 3225989716473264800}
+  - component: {fileID: 2016214571}
   m_Layer: 8
   m_Name: UpgradeSystem
   m_TagString: Untagged
@@ -593,6 +594,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8836284, y: 2.0934205}
   m_EdgeRadius: 0
+--- !u!114 &2016214571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225989716473264861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f636c2e0c452fe449892e3df5cd78204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornite: {fileID: 1446216062}
 --- !u!1 &3386749928499117549
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +886,7 @@ GameObject:
   - component: {fileID: 3282556365411410051}
   - component: {fileID: 5032670962770092767}
   - component: {fileID: 5568386109382135802}
-  - component: {fileID: 4014970632317598875}
+  - component: {fileID: 1446216062}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -968,7 +982,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4014970632317598875
+--- !u!114 &1446216062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -977,9 +991,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6203654020448063099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e4622ed9a46df469e4424672b55bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 79338798bfd7200459167a462109c0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PP: {fileID: 0}
 --- !u!1 &6632772948737640416
 GameObject:
   m_ObjectHideFlags: 0

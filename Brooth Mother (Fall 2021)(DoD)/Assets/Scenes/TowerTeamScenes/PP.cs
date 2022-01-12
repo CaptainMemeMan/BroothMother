@@ -43,6 +43,15 @@ public class PP : MonoBehaviour
    
     }
 
+   //public float ReturnPoints()
+   // {
+   //     if (points != 40)
+   //     {
+   //         points = points + 5; 
+   //     }
+   //     return points; 
+      
+   // }
 
     void OnCollisionEnter2D(Collision2D collision)
     {

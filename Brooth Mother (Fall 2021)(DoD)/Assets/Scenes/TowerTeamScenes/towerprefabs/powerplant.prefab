@@ -286,106 +286,73 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &3225989716155356150
+--- !u!1001 &6995705828500662380
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1511210069767760513}
     m_Modifications:
-    - target: {fileID: 2952426565844065215, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-      propertyPath: fornite
+    - target: {fileID: 5607185961526639332, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
+      propertyPath: PP
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264861, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-      propertyPath: m_Name
-      value: UpgradeSystemPP
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+      objectReference: {fileID: 1511210069767760515}
+    - target: {fileID: 5607185961526639332, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
+      propertyPath: poop
+      value: 
+      objectReference: {fileID: 1511210069767760512}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
+    - target: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2822416749276391152, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-    - {fileID: 4014970632317598875, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
---- !u!1 &334719275 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3225989716473264861, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-  m_PrefabInstance: {fileID: 3225989716155356150}
-  m_PrefabAsset: {fileID: 0}
+    - target: {fileID: 6995705828268966215, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
+      propertyPath: m_Name
+      value: UpgradeSystemPP
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
 --- !u!4 &334719272 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3225989716473264862, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-  m_PrefabInstance: {fileID: 3225989716155356150}
+  m_CorrespondingSourceObject: {fileID: 6995705828268966212, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
+  m_PrefabInstance: {fileID: 6995705828500662380}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8850359386900258189 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6203654020448063099, guid: 1600d46125821ad41acdb21bef4eee48, type: 3}
-  m_PrefabInstance: {fileID: 3225989716155356150}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2016214571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334719275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f636c2e0c452fe449892e3df5cd78204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fornite: {fileID: 1446216062}
---- !u!114 &1446216062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850359386900258189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79338798bfd7200459167a462109c0e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
