@@ -6,6 +6,7 @@ public class UpgradeLR : MonoBehaviour
 {
     public GameObject LR;
     public ShootController bulletspeed;
+    public TMPro.TextMeshProUGUI MAX;
     //public BulletController bulletdmg; 
     private void Start()
     {
@@ -44,6 +45,10 @@ public class UpgradeLR : MonoBehaviour
         {
             bulletspeed.ShootDelay = bulletspeed.ShootDelay - 0.25f;
             Currency.gold -= 50;
+        }
+        else if (bulletspeed.ShootDelay == 1)
+        {
+            MAX.GetComponent<TMPro.TextMeshProUGUI>().text = ("Max Upgrade");
         }
     }
 

@@ -5,7 +5,8 @@ using UnityEngine;
 public class UpgradePP : MonoBehaviour
 {
     public GameObject PP;
-    public PP poop; 
+    public PP poop;
+    public TMPro.TextMeshProUGUI MAX;
     private void Start()
     {
         
@@ -33,6 +34,9 @@ public class UpgradePP : MonoBehaviour
             poop.points = poop.points + 5;
             Currency.gold -= 50; 
             Debug.Log(poop.points);
+        }else if (poop.points == 40)
+        {
+            MAX.GetComponent<TMPro.TextMeshProUGUI>().text = ("Max Upgrade");
         }
     }
 

@@ -388,6 +388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PP: {fileID: 0}
+  poop: {fileID: 0}
+  MAX: {fileID: 8318456054480214083}
 --- !u!1 &2332235059032948194
 GameObject:
   m_ObjectHideFlags: 0
