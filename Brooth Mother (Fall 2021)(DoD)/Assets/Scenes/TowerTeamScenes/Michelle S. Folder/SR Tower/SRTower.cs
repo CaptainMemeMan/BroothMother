@@ -21,7 +21,14 @@ public class Turret : MonoBehaviour
     // Start is called before the first frame update
 
     void Start(){
-        InvokeRepeating("UpdateTarget",0f,0.5f); //check for nearby targets
+        if (spawning.enemiesOnScreen == true)
+        {
+            InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        }
+        
+        
+            
+        //check for nearby targets
 
     }
    /* void UpdateTarget(){

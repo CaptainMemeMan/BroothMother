@@ -35,11 +35,15 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer <= 0){
-            SpawnBullets();
-            timer = cooldown;
+        if (spawning.enemiesOnScreen == true)
+        {
+            if (timer <= 0)
+            {
+                SpawnBullets();
+                timer = cooldown;
+            }
+            timer -= Time.deltaTime;
         }
-        timer -= Time.deltaTime;
         
     }
 
