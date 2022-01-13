@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     public Vector2 velocity;
     public float speed;
     public float rotation;
-    public int damage = 1;
+    public int damage;
     PlayerHealth player; 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +32,9 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             collision.GetComponent<EnemyPath>().updatehealth(damage);
         
+        }else if (collision.gameObject.layer == 11)
+        {
+            Destroy(gameObject); 
         }
 
         //else if (collision.gameObject.tag == "Player")

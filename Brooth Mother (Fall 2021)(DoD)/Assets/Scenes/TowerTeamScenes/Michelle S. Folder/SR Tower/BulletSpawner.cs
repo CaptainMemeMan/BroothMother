@@ -10,19 +10,27 @@ public class BulletSpawner : MonoBehaviour
     public GameObject bulletResource;
     public float minRotation;
     public float maxRotation;
-    public int numOfBullets;
+    public int numOfBullets = 6;
     public bool isRandom;
-
+    private int numofBulletsStart = 4; //additional stuff (kirk) 
     public float cooldown;
+    
+    //public float currentcooldown; //additional stuff (kirk) 
+    //public float speedcooldown;
+    //public bool hasSpeedUpgrade; 
+    
     float timer;
     public float bulletSpeed;
     public Vector2 bulletVelocity;
+
 
     float[] rotations;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+       // numOfBullets = numofBulletsStart; 
         timer = cooldown;
         rotations = new float[numOfBullets];
         if(!isRandom)
@@ -40,10 +48,16 @@ public class BulletSpawner : MonoBehaviour
             if (timer <= 0)
             {
                 SpawnBullets();
-                timer = cooldown;
+                timer = cooldown; 
+                //if (hasSpeedUpgrade == false)
+                //{
+                //    timer = cooldown;
+                //}
+                //else timer = speedcooldown; 
             }
             timer -= Time.deltaTime;
         }
+        
         
     }
 
@@ -82,10 +96,10 @@ public class BulletSpawner : MonoBehaviour
         for(int i = 0; i < numOfBullets; i++)
         {
             spawnedBullets[i] = Instantiate(bulletResource, transform);
-        //    BulletManager.bullets.Add(spawnedBullets[i]);   
+          //  BulletManager.bullets.Add(spawnedBullets[i]);   
             var b = spawnedBullets[i].GetComponent<Bullet>();
             b.rotation = rotations[i];
-            b.speed = bulletSpeed;
+            b.speed = bulletSpeed; 
             b.velocity = bulletVelocity;
         }
         return spawnedBullets;

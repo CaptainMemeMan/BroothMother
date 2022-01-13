@@ -356,6 +356,10 @@ PrefabInstance:
       value: -0.15168568
       objectReference: {fileID: 0}
     - target: {fileID: 8748849954326646060, guid: 0384f588f13d83a499e084abe3180513, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dff64ac39333c943b75bf3313edfaea, type: 3}
+    - target: {fileID: 8748849954326646060, guid: 0384f588f13d83a499e084abe3180513, type: 3}
       propertyPath: m_Maskable
       value: 0
       objectReference: {fileID: 0}

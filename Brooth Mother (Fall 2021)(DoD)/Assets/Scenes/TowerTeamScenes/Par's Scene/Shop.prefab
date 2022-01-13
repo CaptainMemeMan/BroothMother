@@ -118,8 +118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr_tower: {fileID: 5877139770530805704, guid: fc6e8e8abe5b83f4ab55f657632f2bf2, type: 3}
   lr_tower: {fileID: 7281384220064052589, guid: c4321f5993e94e444b651137cde21331, type: 3}
-  bomb_tower: {fileID: 5552156348545029551, guid: ce2ce5d7d6f812d45be511d173d0b534, type: 3}
+  bomb_tower: {fileID: 1237091780611181373, guid: ce2ce5d7d6f812d45be511d173d0b534, type: 3}
   farm_tower: {fileID: 1511210069767760515, guid: 875a1b8ee36ba5a46a1f6e9897c8e822, type: 3}
+  health: {fileID: 0}
 --- !u!1 &141490332666367631
 GameObject:
   m_ObjectHideFlags: 0

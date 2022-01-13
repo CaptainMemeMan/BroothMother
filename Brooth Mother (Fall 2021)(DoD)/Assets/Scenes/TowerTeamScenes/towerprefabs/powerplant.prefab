@@ -293,6 +293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1511210069767760513}
     m_Modifications:
+    - target: {fileID: 4000801535497637976, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
+      propertyPath: m_text
+      value: Upgrades
+      objectReference: {fileID: 0}
     - target: {fileID: 5607185961526639332, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
       propertyPath: PP
       value: 
@@ -349,6 +353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpgradeSystemPP
       objectReference: {fileID: 0}
+    - target: {fileID: 8049552177045888362, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7fbffc0c37da50e4b8e26311681dd723, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f3e7bed19fd664a9f64b81b689668b, type: 3}
 --- !u!4 &334719272 stripped

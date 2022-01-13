@@ -12,7 +12,7 @@ public class Shop : MonoBehaviour
     public GameObject lr_tower;
     public GameObject bomb_tower;
     public GameObject farm_tower;
-   
+    public PlayerHealth health; 
 
 
     // Start is called before the first frame update
@@ -54,6 +54,11 @@ public class Shop : MonoBehaviour
            // cur -= 100;
             GetComponentInParent<PlayerMovement>().towercarry(farm_tower);
         }
+    }
+
+    public void buy_Health()
+    {
+        health.HealPlayer(1); 
     }
 
     private void Start()
