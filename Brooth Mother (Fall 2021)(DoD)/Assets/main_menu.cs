@@ -5,14 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class main_menu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //initialize audio (source is from main camera)
+    public AudioSource audio;
+    private void Start()
+    {
+        //audio = GetComponent<AudioSource>();
+    }
+
+    //define function to play sound when button is clicked
+    public void audioTrigger()
+    {
+        audio.Play();
+    }
+
+    //load level scene
     public void PlayGame()
     {
         SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
         SceneManager.LoadScene(1);
     }
 
-    // Update is called once per frame
+    //quit
     public void QuitGame()
     {
         Debug.Log("QUIT!");
