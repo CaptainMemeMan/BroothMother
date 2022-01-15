@@ -12,10 +12,19 @@ public class Shop : MonoBehaviour
     public GameObject lr_tower;
     public GameObject bomb_tower;
     public GameObject farm_tower;
-    public PlayerHealth health; 
+    public PlayerHealth health;
+
+    //initialize audio (source is from player)
+    public AudioSource audio;
+
+    //define function to play sound when button is clicked
+    public void audioTrigger()
+    {
+        audio.Play();
+    }
 
 
-    // Start is called before the first frame update
+
     public void buy_LR()
     {
        

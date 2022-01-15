@@ -26,6 +26,9 @@ public class EnemyPath : MonoBehaviour
 
     private Vector3 destination;
 
+    //initialize audio (source is attatched to enemy prefab)
+    public AudioSource audio;
+
     private void Awake()
     {
         AStar.Algorithm();
@@ -73,12 +76,13 @@ public class EnemyPath : MonoBehaviour
         //Debug.Log("Moving towards");
         //Debug.Log(path.Count);
     }
-
+   
     private IEnumerator explode()
     {
         death = true;
         gameObject.GetComponent<Renderer>().enabled = false;
         explosion.Play();
+        audio.Play();
         GetComponent<DropCurrency>().DropCredit();
         yield return new WaitForSeconds(1.5f);
         Destroy(parent);
