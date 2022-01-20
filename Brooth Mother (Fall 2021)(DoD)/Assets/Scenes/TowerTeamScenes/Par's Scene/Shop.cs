@@ -67,7 +67,12 @@ public class Shop : MonoBehaviour
 
     public void buy_Health()
     {
-        health.HealPlayer(1); 
+        if (Currency.gold >= 50 && health.hearts != health.maxHearts)
+        {
+            health.HealPlayer(1);
+            Currency.gold -= 50;
+        }
+       
     }
 
     private void Start()
